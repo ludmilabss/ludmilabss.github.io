@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Links -->
+    <link rel="stylesheet" href="/assets/css/home.css">
+    <link rel="icon" href="/assets/images/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Título -->
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" >IMC Plus</a>
+            <ul class="menu-list">
+                <li>
+                    <a href="/pages/home.html">HOME</a>
+                </li>
+                <li>
+                    <a href="/pages/sobre.html">SOBRE</a>
+                </li>
+                <li>
+                    <a href="/pages/contato.html">CONTATO</a>
+                </li>
+            </ul>
+            <div class="exit-icon">
+                <i class="fas fa-sign-out-alt"></i>
+            </div>
+        </nav>
+    </header>    
+
+    <main id="container">
+        <section id="calculadora">
+            <form id="formato">
+                <h1 id="titulo">
+                    Calculadora de IMC
+                </h1>
+
+                <div class="dados">
+                    <label for="peso">
+                        Peso (Kg)
+                    </label>
+                    <div class="dados-elementos">
+                        <i class="fa-solid fa-weight-hanging"></i>                        
+                        <input type="number" id="peso" required>
+                        <span>
+                            Kg
+                        </span>
+                    </div>
+                </div>
+
+                <div class="dados">
+                    <label for="altura">
+                        Altura (cm)
+                    </label>
+                    <div class="dados-elementos">
+                        <i class="fa-solid fa-ruler"></i>                        
+                        <input type="number" step="0.01" id="altura" required>
+                        <span>
+                            cm
+                        </span>
+                    </div>
+                </div>
+
+                <button id="calcular">
+                    Calcular
+                </button>
+            </form>
+
+            <div id="informacoes" class="hidden">
+                <div id="resultado">
+                    <div id="imc">
+                        <span id="valor"></span>
+                        <span>Seu IMC</span>
+                    </div>
+                    <div id="descricao">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div id="maisInfo">
+                    <a href="https://www.saude.rj.gov.br/obesidade/noticias/2019/03/imc-voce-sabe-o-que-o-indice-de-massa-corporal-diz-sobre-sua-saude">
+                        Mais informações sobre o IMC
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>                    
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/assets/js/calculadora.js"></script>
+</body>
+</html>

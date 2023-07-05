@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&display=swap');
+
+:root {
+    --fa-rotate-angle: 0deg; 
+}  
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 32px; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    color: #F2C438; 
+    text-decoration: none; 
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 18px 100px;
+    background-color: #262626;
+    z-index: 9999;
+}
+
+.exit-icon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.exit-icon i {
+    color: #F2C438;
+    font-size: 24px;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    padding: 0; 
+    
+}
+
+.menu-list a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu-list a:hover {
+    color: #F2C438;
+}
+
+.menu-list li {
+    cursor: pointer;
+    color: #f8fafc;
+    margin-left: 32px;
+    letter-spacing: 3px;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+    
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #18181b;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+#calculadora {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    color: #f8fafc;
+    background-color: #262626;
+    border-radius: 8px;
+    margin-top: 85px;
+}
+
+#formato {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#titulo {
+    font-size: 3rem;
+    position: relative;
+}
+
+#titulo::after {
+    position: absolute;
+    content: '';
+    background-color: #F2C438;
+    width: 5.5rem;
+    height: 3px;
+    bottom: 0;
+    right: 0;
+    border-radius: 5.5rem;
+}
+
+.dados label {
+    font-size: 1.2rem;
+    color: #cbd5e1;
+    font-weight: 500;
+}
+
+.dados-elementos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3f3f46;
+    padding: 0.7rem;
+    border-radius: 3px;
+    margin-top: 3px;
+}
+
+.dados span,
+.dados-elementos i {
+    color: #cbd5e1;
+    font-size: 1.2rem;
+    padding: 0.6rem 0.7rem;
+}
+
+.dados-elementos input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 1.3rem;
+    color: #f8fafc;
+    padding: 0 0.5rem;
+}
+
+.dados-elementos input::-webkit-outer-spin-button,
+.dados-elementos input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.dados-elementos input:focus {
+    outline: none;
+}
+
+#calcular {
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #F2C438;
+    color: #f8fafc;
+    padding: 0.5rem 0;
+    cursor: pointer;
+}
+
+#resultado {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-top: 1px solid #ffffff34;
+    padding: 0.75rem 0;
+}
+
+#imc {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.25rem;
+}
+
+#imc span:last-child {
+    font-size: 0.9rem;
+    color: #cbd5e1;
+}
+
+#descricao {
+    width: 15.5rem;
+}
+
+#maisInfo {
+    border-top: 1px solid #ffffff34;
+    padding-top: 0.75rem;
+}
+
+#maisInfo a {
+    color: #F2C438;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+#maisInfo a:hover {
+    color: #f8fafc;
+}
+
+.hidden {
+    display: none;
+}
+
+.normal {
+    color: #16a34a;
+}
+
+.attention {
+    color: #dc2626;
+}
+
+@media screen and (max-width: 500px) {
+    #container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 85px; 
+    }
+    #calculadora {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        justify-content: center;
+        margin-bottom: 0; 
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 18px 20px; 
+        background-color: #262626;
+        z-index: 9999;
+        margin-bottom: 0; 
+    }
+    
+    .menu-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .menu-list li {
+        margin: 10px 0; 
+    }
+    
+    .logo {
+        font-size: 24px; 
+        text-align: center; 
+    }
+}
+
+

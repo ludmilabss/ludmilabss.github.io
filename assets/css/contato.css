@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&display=swap');
+
+:root {
+    --fa-rotate-angle: 0deg; 
+}  
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #F2C438;
+    text-decoration: none;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 18px 100px;
+    background-color: #262626;
+    z-index: 9999;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    padding: 0; 
+}
+
+.menu-list a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu-list a:hover {
+    color: #F2C438;
+}
+
+.menu-list li {
+    cursor: pointer;
+    color: #f8fafc;
+    margin-left: 32px;
+    letter-spacing: 3px;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #18181b;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contato {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.contato h1 {
+    font-size: 2rem;
+    color: #F2C438;
+    margin-bottom: 20px;
+}
+
+.contato p {
+    font-size: 1.2rem;
+    color: #f8fafc;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-item i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #F2C438;
+}
+
+.contact-item span {
+    font-size: 1rem;
+    color: #f8fafc;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #F2C438;
+    color: #262626;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.contact-form button:hover {
+    background-color: #FFDE79;
+    color: #262626;
+}
+
+.exit-icon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.exit-icon i {
+    color: #F2C438;
+    font-size: 24px;
+}
+
+.swal2-popup {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.swal2-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.swal2-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.swal2-confirm {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.swal2-confirm:hover {
+    background-color: #45a049;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .contato h1 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .contato p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .contact-item i {
+        font-size: 1rem;
+    }
+
+    .contact-item span {
+        font-size: 0.9rem;
+    }
+
+    .contact-form textarea {
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .contato h1 {
+        font-size: 1.2rem;
+    }
+
+    .contato p {
+        font-size: 0.9rem;
+    }
+
+    .contact-item i {
+        font-size: 0.8rem;
+    }
+
+    .contact-item span {
+        font-size: 0.8rem;
+    }
+
+    .contact-form textarea {
+        height: 80px;
+    }
+}
+
+

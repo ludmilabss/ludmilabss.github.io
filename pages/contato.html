@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!-- Links -->
+    <link rel="stylesheet" href="/assets/css/contato.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.js"></script>
+
+    <!-- Título -->
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo">IMC Plus</a>
+            <ul class="menu-list">
+                <li>
+                    <a href="/pages/home.html">HOME</a>
+                </li>
+                <li>
+                    <a href="/pages/sobre.html">SOBRE</a>
+                </li>
+                <li>
+                    <a href="/pages/contato.html">CONTATO</a>
+                </li>
+            </ul>
+            <div class="exit-icon">
+                <i class="fas fa-sign-out-alt"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="contato">
+        <div class="container">
+            <h1>Entre em contato conosco</h1>
+            <p>Se você tiver alguma dúvida, sugestão ou feedback, não hesite em nos contatar.</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Endereço: Rua Exemplo, 123 - Cidade, Estado</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email: exemplo@email.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Telefone: (00) 1234-5678</span>
+                </div>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Seu nome">
+                <input type="email" placeholder="Seu email">
+                <textarea placeholder="Sua mensagem"></textarea>
+                <button type="submit">Enviar mensagem</button>
+            </form>
+            <div id="mensagem-confirmacao"></div>
+        </div>
+    </section>
+    
+    <script src="/assets/js/contato.js"></script>
+
+</body>
+</html>

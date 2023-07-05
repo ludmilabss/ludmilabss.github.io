@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&display=swap');
+
+:root {
+    --fa-rotate-angle: 0deg; 
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #18181b;
+    overflow: hidden;
+}
+
+.espaco-login {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #262626;
+    width: 80%;
+    max-width: 400px; /* Define a largura máxima para evitar que o formulário fique muito largo em telas grandes */
+    height: 60vh;
+    padding: 3rem;
+    border-radius: 3px;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login button,
+.login input {
+    padding: 0.9rem 0.9rem;
+    margin-top: 1rem;
+    border: none;
+    background-color: #3f3f46;
+    color: #f8fafc;
+    border-radius: 3px;
+}
+
+.login button {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#btn-login {
+    border: none;
+    font-weight: bold;
+    background-color: #F2C438;
+    color: #f8fafc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+#btn-login:hover{
+    background-color: #FFDE79;
+}
+
+.login input:focus {
+    outline: none;
+}
+
+#titulo-login {
+    color: #f8fafc;
+    font-size: 2.2rem;
+    position: relative;
+}
+
+.itens-abaixo {
+    margin-top: 1rem;
+
+    display: flex;
+    font-size: 0.8rem;
+    align-items: center;
+}
+
+p {
+    color: #f8fafc;
+}
+
+a {
+    margin-left: 0.3rem;
+    color: #F2C438;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFDE79;
+}
+
+@media screen and (max-width: 500px) {
+  .login {
+    width: 90%;
+  }
+}
